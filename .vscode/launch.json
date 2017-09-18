@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "attach",
+        "trace": true,
+        "name": "Debug Meteor App",
+        "port": 6161,
+        "stopOnEntry": false,
+        "timeout": 100000,
+        "restart": true,
+        "protocol": "auto",
+        "sourceMaps": true,
+        "outFiles": ["${workspaceRoot}/.meteor/local/build/programs/server/**/*", "${workspaceRoot}/.meteor/local/build/programs/server/*"]
+      }
+    ]
+  }
